@@ -1,0 +1,67 @@
+MySQL Learning
+
+This file contains basic SQL commands and their functionality.
+Here is my main data table. The table contains Name, ID, and Email of students.
+
+Outline:
+• Fetching all data using SELECT.
+• Fetching specific field using SELECT.
+• Fetch data using alias.
+• Show unique data from the table.
+• Fetching data using WHERE condition.
+• Fetching data and using (AND, OR, NOT).
+• Fetching data and using ORDER BY, ASC, DESC.
+• Fetching data by using LIMIT OFFSET.
+• Fetching data by using LIKE and Wildcards.
+• Condition apply by using IN and BETWEEN.
+
+1. Fetching all data using SELECT:
+   Showing the full table.
+   • SELECT * FROM students;
+
+2. Fetching specific field using SELECT:
+   Showing only name and ID of the table.
+   • SELECT name, email FROM students;
+
+3. Fetch data using alias:
+   Retrieving column information changing the column attribute.
+   • SELECT email AS mail FROM students;
+
+4. Show unique data from the table:
+   Showing the distinct elements of the name column.
+   • SELECT DISTINCT name FROM students;
+
+5. Fetching data using WHERE condition:
+   Showing information if data meet specific conditions.
+   • SELECT id, name, email FROM students
+     WHERE id='5';
+
+6. Fetching data and using (AND, OR, NOT):
+   • SELECT * FROM students
+     WHERE id='5' AND name='Melody Pollich';
+
+7. Fetching data and using ORDER BY, ASC, DESC:
+   i) Showing the student's information in ascending order
+   • SELECT name, email FROM students
+     ORDER BY name, email ASC;
+
+   ii) Showing the student's information in descending order
+   • SELECT * FROM students
+     ORDER BY name DESC;
+
+8. Fetching data by using LIMIT and OFFSET:
+   i) Showing data using LIMIT
+   • SELECT * FROM students
+     LIMIT 5;
+
+   ii) Showing data using LIMIT and OFFSET
+   • SELECT * FROM students
+     LIMIT 5 OFFSET 2;
+
+9. Fetching data by using LIKE and Wildcards:
+   • SELECT * FROM students
+     WHERE email LIKE '%gmail%';
+
+10. Condition apply by using IN and BETWEEN:
+    • SELECT * FROM students
+      WHERE name IN ('Mercedes Boyle');
